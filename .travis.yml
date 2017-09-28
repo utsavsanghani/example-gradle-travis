@@ -8,3 +8,4 @@ jdk:
 
 after_success:
   - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
+  - bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=https://www.saleshub.blackducksoftware.com --blackduck.hub.username=usanghani --blackduck.hub.password=blackduck --blackduck.hub.auto.import.cert=true
