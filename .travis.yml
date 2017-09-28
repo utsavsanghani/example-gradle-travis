@@ -7,4 +7,4 @@ jdk:
 - oraclejdk8
 
 after_success:
-  - bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url="http://www.saleshub.blackducksoftware.com" --blackduck.hub.username=usanghani --blackduck.hub.password=blackduck --blackduck.hub.auto.import.cert=true
+  - bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url="https://saleshub.blackducksoftware.com" --blackduck.hub.username=usanghani --blackduck.hub.password=blackduck --blackduck.hub.auto.import.cert=true
