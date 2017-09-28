@@ -8,3 +8,7 @@ jdk:
 
 after_success:
   - bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url="https://saleshub.blackducksoftware.com" --blackduck.hub.username=usanghani --blackduck.hub.password=blackduck --blackduck.hub.auto.import.cert=true --detect.policy.check=true
+ 
+ if 'exit 1; then exit 1
+  else
+  echo "BUILD IS SUCCESSFUL"
